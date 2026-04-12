@@ -1,0 +1,92 @@
+.student-card {
+  background-color: #b3d9f0;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-image-container {
+  margin-bottom: 1.5rem;
+}
+
+.student-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #7a9fa5;
+  background-color: #7a9fa5;
+}
+
+.student-name {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+}
+
+.student-title {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0;
+  font-style: italic;
+  font-family: Georgia, serif;
+}
+
+.student-email {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.student-phone {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.learn-more-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  text-decoration: underline;
+}
+
+.learn-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.learn-more-btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .student-card {
+    padding: 1.5rem 1rem;
+    max-width: 100%;
+  }
+
+  .student-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .student-name {
+    font-size: 1.3rem;
+  }
+}
